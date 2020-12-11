@@ -73,6 +73,56 @@ $(window).load(function(){
 	
 	search();
 
+
+	var search2 = function() {
+		$('.search').on('click', function() {
+			$('.header__search-form').toggleClass('search-form-active');
+			$('.search-form__lining').toggleClass('search-form__lining-visible');
+		});
+		$('.search-form__cross').on('click', function() {
+			$('.search-form__lining').removeClass('search-form__lining-visible');
+			$('.header__search-form').removeClass('search-form-active');
+		});
+		$('.search-form__lining').on('click', function() {
+			$('.search-form__lining').removeClass('search-form__lining-visible');
+			$('.header__search-form').removeClass('search-form-active');
+		});
+	}
+	
+	search2();
+
+
+	var uslug = function(){
+
+		$('.uslug').on('click', function() {
+			$('.uslugi').toggleClass('search-form-active');
+			$('.search-form__lining').toggleClass('search-form__lining-visible');
+		});	
+
+		$('.register-form__cross').on('click', function() {
+			$('.search-form__lining').removeClass('search-form__lining-visible');
+			$('.uslugi').removeClass('search-form-active');
+		});
+	}
+
+	uslug();
+
+
+	var obn = function(){
+
+		$('.obj').on('click', function() {
+			$('.obji').toggleClass('search-form-active');
+			$('.search-form__lining').toggleClass('search-form__lining-visible');
+		});	
+
+		$('.register-form__cross').on('click', function() {
+			$('.search-form__lining').removeClass('search-form__lining-visible');
+			$('.obji').removeClass('search-form-active');
+		});
+	}
+
+	obn();
+
 	var logIn = function() {
 		$('.header__account').on('click', function() {
 			$('.header__logIn-form').toggleClass('logIn-form-active');
@@ -98,6 +148,32 @@ $(window).load(function(){
 	
 	logIn();
 
+
+	var logIn2 = function() {
+		$('.rsign').on('click', function() {
+			$('.header__logIn-form').toggleClass('logIn-form-active');
+			$('.logIn-form__lining').toggleClass('logIn-form__lining-visible');
+		});
+		$('.logIn-form__cross').on('click', function() {
+			$('.logIn-form__lining').removeClass('logIn-form__lining-visible');
+			$('.header__logIn-form').removeClass('logIn-form-active');
+		});
+		$('.logIn-form__forgot').on('click', function() {
+			$('.logIn-form__lining').removeClass('logIn-form__lining-visible');
+			$('.header__logIn-form').removeClass('logIn-form-active');
+		});
+		$('.logIn-form__button_r').on('click', function() {
+			$('.logIn-form__lining').removeClass('logIn-form__lining-visible');
+			$('.header__logIn-form').removeClass('logIn-form-active');
+		});
+		$('.logIn-form__lining').on('click', function() {
+			$('.logIn-form__lining').removeClass('logIn-form__lining-visible');
+			$('.header__logIn-form').removeClass('logIn-form-active');
+		});
+	}
+	
+	logIn2();
+
 	var register = function() {
 		$('.logIn-form__button_r').on('click', function() {
 			$('.register-form__lining').toggleClass('register-form__lining-visible');
@@ -115,7 +191,22 @@ $(window).load(function(){
 	
 	register();
 
-
+		var register2 = function() {
+		$('.reg').on('click', function() {
+			$('.register-form__lining').toggleClass('register-form__lining-visible');
+			$('.header__register-form').toggleClass('register-form-active');
+		});
+		$('.register-form__cross').on('click', function() {
+			$('.register-form__lining').removeClass('register-form__lining-visible');
+			$('.header__register-form').removeClass('register-form-active');
+		});
+		$('.register-form__lining').on('click', function() {
+			$('.register-form__lining').removeClass('register-form__lining-visible');
+			$('.header__register-form').removeClass('register-form-active');
+		});
+	}
+	
+	register2();
 
 	var passRemember = function() {
 		$('.logIn-form__forgot').on('click', function() {
@@ -136,6 +227,22 @@ $(window).load(function(){
 
 
 
+	var passRemember2 = function() {
+		$('.change_pass').on('click', function() {
+			$('.pass-remember-form__lining').toggleClass('pass-remember-form__lining-visible');
+			$('.header__pass-remember-form').toggleClass('pass-remember-form-active');
+		});
+		$('.pass-remember-form__cross').on('click', function() {
+			$('.pass-remember-form__lining').removeClass('pass-remember-form__lining-visible');
+			$('.header__pass-remember-form').removeClass('pass-remember-form-active');
+		});
+		$('.pass-remember-form__lining').on('click', function() {
+			$('.pass-remember-form__lining').removeClass('pass-remember-form__lining-visible');
+			$('.header__pass-remember-form').removeClass('pass-remember-form-active');
+		});
+	}
+	
+	passRemember2();
 
 
 	var offerFocus = function() {
