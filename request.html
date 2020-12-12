@@ -252,8 +252,8 @@
 								</div>
 
 								<div class="list theme__select">
-									<select name="theme">
-										<option selected value="theme0">Тема сообщения</option>
+									<select name="theme" >
+										<option data-display="Тема сообщения" selected value="theme0">Тема сообщения</option>
 										<option value="theme1">Тема первая</option>
 										<option value="theme2">Тема вторая</option>
 										<option value="theme3">Тема третья</option>
@@ -359,7 +359,14 @@
 
 		$('.list select').ready(function() {
  			 $('.list select').niceSelect();
-
+ 			  var removed=false;    
+			$('.nice-select').click(function(){
+				if(!removed)
+        		{
+			   $(this).find('ul li').get(0).remove();
+			   removed=true;
+				}
+			})
 		})
 
 	</script>

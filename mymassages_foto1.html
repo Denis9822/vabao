@@ -10,6 +10,7 @@
 	<link rel="icon" href="img/svg/favicon.svg">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 		<link rel="stylesheet" href="css/update.css">
 </head>
 <body>
@@ -185,7 +186,7 @@
 								<p>Был в сети в 16:26</p>
 							</div>
 						</div>
-						<div class="chat__complain"></div>
+						<a href="#"><div class="chat__complain"></div></a>
 					</div>
 
 					<div class="chat__main">
@@ -204,7 +205,7 @@
 
 						<div class="chat__own-massage d-flex chat_img">
 							<div class="first">
-								<div class="own_img"><img src="img/svg/img_test.svg" alt=""></div>
+								<div class="own_img"><img class="dfccc" src="img/svg/img_test.svg" alt=""></div>
 								<span>16:18</span>
 							</div>
 						</div>
@@ -314,7 +315,7 @@
 								<p>Был в сети в 16:26</p>
 							</div>
 						</div>
-						<div class="chat__complain"></div>
+						<a href="#"><div class="chat__complain"></div></a>
 					</div>
 
 					<div class="chat__main">
@@ -446,7 +447,7 @@
 								<p>Был в сети в 16:26</p>
 							</div>
 						</div>
-						<div class="chat__complain"></div>
+						<a href="#"><div class="chat__complain"></div></a>
 					</div>
 
 					<div class="chat__main">
@@ -461,8 +462,8 @@
 						<div class="chat__own-massage d-flex chat_img_multiple">
 							<div class="first">
 								<p>Привет, вот фото</p>
-								<div class="own_img"><img src="img/svg/img_test3.svg" alt=""></div>
-								<div class="own_img"><img src="img/svg/img_test3.svg" alt=""></div>
+								<div class="own_img test3"><img src="img/svg/img_test3.svg" alt=""></div>
+								<div class="own_img test3"><img src="img/svg/img_test3.svg" alt=""></div>
 								<span>16:18</span>
 							</div>
 						</div>
@@ -536,7 +537,7 @@
 								<p>Был в сети в 16:26</p>
 							</div>
 						</div>
-						<div class="chat__complain"></div>
+						<a href="#"><div class="chat__complain"></div></a>
 					</div>
 
 					<div class="chat__main">
@@ -583,4 +584,23 @@
 	</section> <!-- My massages Start -->
 	<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
 	<script src="js/scripts.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+
+	<script>
+		$('.own_img').magnificPopup({
+			    items: {
+			      src: 'img/svg/img_test.svg'
+			    },
+			  type: 'image'
+			  // other options
+			});
+
+		$('.test3').magnificPopup({
+			    items: {
+			      src: 'img/svg/img_test3.svg'
+			    },
+			  type: 'image'
+			  // other options
+		});
+	</script>	
 </body>

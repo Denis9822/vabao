@@ -179,7 +179,8 @@
 								</div>
 								<div class="details1__status">
 									<p class="details1__status-title">Статус</p>
-									<p class="details1__status-subtitle">Открыт</p>
+									<p class="details1__status-subtitle stat-close">Закрыт</p>
+
 								</div>
 								<!-- /.details1__status -->
 							</div>
@@ -202,7 +203,8 @@
 							<div class="details1__data">
 								<div class="details1__status">
 									<p class="details1__status-title">Статус</p>
-									<p class="details1__status-subtitle">Открыт</p>
+									<p class="details1__status-subtitle stat-close">Закрыт</p>
+
 								</div>
 								<!-- /.details1__status -->
 								<div class="details1__sum">
@@ -238,11 +240,11 @@
 		</div>
 		<!-- /.reviews__title -->
 		<div class="reviews__stars">
-			<img data-rating="1" src="img/icons/Star3.png" alt="">
-				<img data-rating="2" src="img/icons/Star3.png" alt="">
-				<img data-rating="3" src="img/icons/Star3.png" alt="">
-				<img data-rating="4" src="img/icons/Star3.png" alt="">
-				<img data-rating="5" src="img/icons/Star3.png" alt="">
+			<img data-rating="1" src="img/icons/Star3.png" alt="" class="dv">
+				<img data-rating="2" src="img/icons/Star3.png" alt="" class="dv">
+				<img data-rating="3" src="img/icons/Star3.png" alt="" class="dv">
+				<img data-rating="4" src="img/icons/Star3.png" alt="" class="dv">
+				<img data-rating="5" src="img/icons/Star3.png" alt="" class="dv">
 		</div>
 		<!-- /.reviews__stars -->
 	</div>
@@ -263,16 +265,17 @@
 					<div class="orderopen__row-notice">
 						<div class="row-notice__user">
 							<div class="row-notice__image">
-								<img src="img/comments/5.jpg" alt="">
+								<a href="profile.html"><img src="img/comments/5.jpg" alt=""></a>
 							</div>
 							<!-- /.row-notice__image -->
 							<div class="row__notice-body">
 								<div class="row-notice__data">
-									<p class="row-notice__data-name">Петя</p>
+									<a href="profile.html"><p class="row-notice__data-name">Петя</p></a>
 									<p class="row-notice__data-visit">Был в сети сегодня в 16:26</p>
 								</div>
 								<!-- /.row-notice__data -->
-								<div class="row-notice__icon"></div>
+										<a class="row_a_not row_a_not1" href=""><div class="mr--none row-notice__icon row-notice__icon2"></div></a>
+								<a class="row_a_not" href=""><div class="mr--none row-notice__icon"></div></a>
 							<!-- /.row-notice__icon -->
 							</div>
 							<!-- /.row__notice-body -->
@@ -382,17 +385,17 @@
 
 				<div class="per__wrapper">
 					<div class="per__reviews">
-						<div class="per__body">
+						<div class="per__body flex-dir">
 							<div class="per__title">
 								<p>Отзыв о продавце</p>
 							</div>
 							<!-- /.reviews__title -->
-							<div class="per_stars">
-								<img data-rating="1" src="img/icons/Star3.png" alt="">
-								<img data-rating="2" src="img/icons/Star3.png" alt="">
-								<img data-rating="3" src="img/icons/Star3.png" alt="">
-								<img data-rating="4" src="img/icons/Star3.png" alt="">
-								<img data-rating="5" src="img/icons/Star3.png" alt="">
+							<div class="per_stars mob-ratings">
+								<img data-rating="1" src="img/svg/star1.svg" alt="">
+								<img data-rating="2" src="img/svg/star1.svg" alt="">
+								<img data-rating="3" src="img/svg/star1.svg" alt="">
+								<img data-rating="4" src="img/svg/star1.svg" alt="">
+								<img data-rating="5" src="img/svg/star1.svg" alt="">
 							</div>
 							<!-- /.reviews__stars -->
 						</div>
@@ -602,15 +605,38 @@ new Splide( '.splide', {
 $('.reviews__stars img').click(function(){
 
 	$('.reviews__stars img').removeClass('reviews__stars_ready');
+	$('.reviews__stars img').attr('src','img/icons/Star3.png');
+
 	var rating = $(this).attr('data-rating');
 
 	$('.reviews__stars img').each(function( index ) {
 
 		if (index <rating)
+		{
 		$(this).addClass('reviews__stars_ready');
-
+		$(this).attr('src','img/svg/Star_5.svg');
+		}
 	});
 })
+
+$('.mob-ratings img').click(function(){
+
+	$('.mob-ratings img').removeClass('reviews__stars_ready');
+	$('.mob-ratings img').attr('src','img/svg/star1.svg');
+
+	var rating = $(this).attr('data-rating');
+
+	$('.mob-ratings img').each(function( index ) {
+			
+		if (index <rating)
+		{
+		$(this).addClass('reviews__stars_ready');
+		$(this).attr('src','img/svg/Star_5.svg');
+		}
+	});
+})
+
+
 	</script>
 </body>
 </html>

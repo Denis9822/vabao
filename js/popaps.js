@@ -92,6 +92,42 @@ $(window).load(function(){
 	search2();
 
 
+	var acc_reg = function() {
+		$('.acc_reg').on('click', function() {
+			$('.reg_succ').toggleClass('search-form-active');
+			$('.search-form__lining').toggleClass('search-form__lining-visible');
+		});
+		$('.register-form__cross').on('click', function() {
+			$('.search-form__lining').removeClass('search-form__lining-visible');
+			$('.reg_succ').removeClass('search-form-active');
+		});
+		$('.search-form__lining').on('click', function() {
+			$('.search-form__lining').removeClass('search-form__lining-visible');
+		$('.reg_succ').removeClass('search-form-active');
+		});
+	}
+	
+	acc_reg();
+
+
+	var acc_email = function() {
+		$('.acc_email').on('click', function() {
+			$('.email_succ').toggleClass('search-form-active');
+			$('.search-form__lining').toggleClass('search-form__lining-visible');
+		});
+		$('.register-form__cross').on('click', function() {
+			$('.search-form__lining').removeClass('search-form__lining-visible');
+			$('.email_succ').removeClass('search-form-active');
+		});
+		$('.search-form__lining').on('click', function() {
+			$('.search-form__lining').removeClass('search-form__lining-visible');
+		$('.email_succ').removeClass('search-form-active');
+		});
+	}
+	
+	acc_email();
+
+
 	var uslug = function(){
 
 		$('.uslug').on('click', function() {
@@ -100,6 +136,11 @@ $(window).load(function(){
 		});	
 
 		$('.register-form__cross').on('click', function() {
+			$('.search-form__lining').removeClass('search-form__lining-visible');
+			$('.uslugi').removeClass('search-form-active');
+		});
+
+		$('.search-form__lining').on('click', function() {
 			$('.search-form__lining').removeClass('search-form__lining-visible');
 			$('.uslugi').removeClass('search-form-active');
 		});
@@ -116,6 +157,10 @@ $(window).load(function(){
 		});	
 
 		$('.register-form__cross').on('click', function() {
+			$('.search-form__lining').removeClass('search-form__lining-visible');
+			$('.obji').removeClass('search-form-active');
+		});
+		$('.search-form__lining').on('click', function() {
 			$('.search-form__lining').removeClass('search-form__lining-visible');
 			$('.obji').removeClass('search-form-active');
 		});

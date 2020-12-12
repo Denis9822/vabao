@@ -1,3 +1,128 @@
+ .popups div
+ {
+  cursor: pointer;
+ }
+ .reg_succ
+ {
+  opacity: 0;
+ }
+ .email_succ
+ {
+  opacity: 0;
+ }
+ .send_user
+ {
+  display: block;
+  width: 205px;
+height: 49px;
+margin: 0 auto;
+background-color: #3878F4;
+color: white;
+text-align: center;
+line-height: 49px;
+margin-top: 40px;
+border-radius: 5px;
+ }
+ .sub-txt
+ {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+line-height: 21px;
+text-align: center;
+
+color: #323232;
+ }
+ .reg_succ_wrapp .uslug_title
+ {
+  font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 49px;
+/* identical to box height */
+font-family: 'ProximaNove-Bld';
+text-align: center;
+
+color: #323232;
+text-shadow: none;
+padding-top: 60px;
+ }
+ .reg_succ_wrapp
+ {
+  padding-bottom: 40px;
+  width: 500px;
+ }
+ .last-online
+ {
+  color: #3878F4;
+ }
+ .splide__slide a:hover
+ {
+  display: block;
+  opacity: 0.8 !important;
+  transition: 0.5s;
+ }
+
+.details1__status-subtitle--in
+{
+  color: #8F9093;
+}
+.row-notice__icon2::after {
+    content: '';
+    display: block;
+    height: 22px;
+    width: 22px;
+    margin: 0 auto 0;
+    padding-top: 20px;
+    background: url(../img/svg/icon_mas.svg) no-repeat center center;
+}
+
+.row-notice__icon::after
+{
+    margin: 0 auto 0;
+  padding-top: 17px;
+}
+.stat-close
+{
+  color: #E83535;
+}
+.my-massages .chat__complain::after
+{
+  padding-top: 16px;
+}
+.history_row-table--mobile--status
+{
+  width: 25%;
+    text-align: center;
+        font-family: 'ProximaNove-Sm';
+}
+.new_message_count
+{
+  font-weight: 900;
+font-size: 16px;
+line-height: 19px;
+top:10px !important;
+color: #FCFCFC;
+}
+.own_img img
+{
+  cursor: zoom-in;
+}
+.history_row-table--mobile--status--red
+{
+  color: #E83535 !important;
+}
+.history_row-table--mobile--status--green
+{
+  color: #3878F4 !important;
+}
+
+.history_row-table--mobile--body--left--user--rigth a
+{
+  color: #323232;
+}
 .obj_wrapp_item .block__button
 {
   width: 70%;
@@ -838,7 +963,8 @@ right: 25px;
 }
 .theme__select .nice-select .list
 {
-  width: 100%;
+    width: 100.3%;
+    left: -1px;
 }
 .theme__select .nice-select:active, .nice-select.open, .nice-select:focus
 {
@@ -941,7 +1067,7 @@ color: rgba(50, 50, 50, 0.7);
   border-top: 15px solid #DBE6FB;
 
 width: 333px;
-height: 247px;
+height: 250px;
 
 /*margin-right: 26px; */
 
@@ -961,18 +1087,20 @@ letter-spacing: 0.02em;
 color: rgba(50, 50, 50, 0.7);
     padding-top: 18px;
     padding-left: 30px;
+    padding-bottom: 3px;
 }
 .orders__main__text
 {
-  font-style: normal;
+font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 19px;
 
-color: #323232;
+
+color: black;
     padding-left: 30px;
     width: 90%;
-    font-family: 'ProximaNove-Sm';
+    font-family: 'ProximaNove-Rg';
 }
 .orders_price_w
 {
@@ -1454,7 +1582,7 @@ padding-top: 10px;
     top: 71px;
     right: -2px;
     opacity: 1;
-    background: brown;
+
 }
 
 .orderopen__row-details1 .splide__arrow--next
@@ -1473,7 +1601,13 @@ color: #3878F4;
 
 .orderopen__row-details1 .splide__arrow--prev
 {
-  display: none;
+  display: block;
+  color:black;
+  top: 110px;
+  position: relative;
+     right: 566px !important;
+    left: initial !important;
+    background-color: none !important;
 }
 .details1__data
 {
@@ -1627,6 +1761,8 @@ text-align: center;
 
 .reviews__stars_ready{
      opacity: 1 !important;
+     width: 15px;
+     height: 15px;
 }
 .finance_container
 {
@@ -1730,6 +1866,21 @@ padding-left: 40px;
 .finance_container_body
 {
   margin-top: 30px;
+}
+.history_row-table--mobile--body--left--type .unit__mini a
+{
+  opacity: 1;
+}
+.unit__mini a
+{
+      font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: rgba(50, 50, 50, 0.7);
+    font-weight: normal;
+    opacity: 0.8;
 }
 .unit__max span
 {
@@ -2039,6 +2190,10 @@ width: 97px;
 
 @media screen and (max-width: 1500px)
 {
+  .obj_wrapp
+  {
+    left: 33%;
+  }
   .wrapp_usl_items--item
   {
     height: auto;
@@ -2100,7 +2255,10 @@ width: 97px;
 
 @media screen and (max-width: 1300px)
 {
-
+  .obj_wrapp
+  {
+    left: 30%;
+  }
 .about__container img {
     width: 55%;
     margin-top: 1px;
@@ -2205,7 +2363,12 @@ width: 97px;
 
 @media screen and (max-width: 992px)
 {
-    .obj_wrapp
+  .orderopen__container
+  {
+    width: 90%;
+    top: 40px;
+  }
+  .obj_wrapp
   {
     left: 16%;
   }
@@ -2252,6 +2415,39 @@ width: 97px;
 
 @media screen and (max-width: 991px)
 {
+ 
+  .title_with_data h4
+  {
+    font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 30px;
+  margin-left: 20px;
+color: #323232;
+font-family: 'ProximaNove-Bld';
+  }
+  .row_a_not1
+  {
+    margin-left: auto;
+  }
+
+  .per__title p
+  {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'ProximaNove-Bld';
+    color: black;
+  }
+  .mob-ratings img
+{
+  width: 22px;
+  height: 22px;
+}
+.mob-ratings .reviews__stars_ready
+{
+  width: 22.2px;
+  height: 22.2px;
+}
   .wrapp_usl_items 
   {
     flex-direction: column;
@@ -2500,14 +2696,7 @@ width: 88px;
   {
     margin-right: 5px;
   }
-  .row-notice__icon2::after {
-    content: '';
-    display: block;
-    height: 22px;
-    width: 22px;
-    margin: 8px auto 0;
-    background: url(../img/svg/icon_mas.svg) no-repeat center center;
-}
+ 
 
   .orderopen__row-notice
   {
@@ -2547,7 +2736,7 @@ width: 88px;
 /*    border-top: 1px solid rgba(47, 108, 226, 0.2);
     border-bottom: 1px solid rgba(47, 108, 226, 0.2);*/
     display: flex;
-
+    justify-content: center;
   }
   .info_about_pc
   {
@@ -2883,10 +3072,11 @@ width: 88px;
   {
     display: block;
     font-weight: bold;
-font-size: 22px;
+font-size: 26px;
 line-height: 27px;
+font-family: 'ProximaNove-Bld';
 /* identical to box height */
-  padding-left: 10px;
+  padding-left: 20px;
 display: flex;
 align-items: flex-end;
 padding-bottom: 20px;
@@ -3168,7 +3358,18 @@ color: black;
   }
   .violation__text
   {
-    padding: 20px;
+    padding: 15px;
+  }
+  .violation__row
+  {
+    margin-right: 10px;
+    margin-left: 10px;
+    border-top: none;
+    border-bottom: 1px solid #CBDAF8;
+  }
+  .violation__title
+  {
+      border-bottom: 1px solid #CBDAF8;
   }
   .rules
   {
@@ -3642,7 +3843,11 @@ top: -15px;
 }
 .footer__menu ul li
 {
-  margin-right: 0;
+  margin-right: 10px;
+}
+.right-nav__item
+{
+  margin-left: 0;
 }
 .footer__second-line
 {
@@ -3680,8 +3885,8 @@ top: -15px;
   display: block;
   width: 15px;
   height: 15px;
-  right: 10px;
-  top:70px;
+right: 6px;
+    top: 69px;
 }
 .profile__column-human
 {
@@ -3739,6 +3944,43 @@ top: -15px;
 margin-top: 20px;
   text-align: center;
   border: 1px solid rgba(47, 108, 226, 0.1);
+}
+
+.per__wrapper::after
+{
+  content: '';
+  position: absolute;
+  width: 80%;
+  left: 10%;
+margin-top: -10px;
+  text-align: center;
+  border: 1px solid rgba(47, 108, 226, 0.1);
+}
+
+.per__wrapper::before
+{
+  content: '';
+  position: absolute;
+  width: 80%;
+  left: 10%;
+margin-top: 13px;
+  text-align: center;
+  border: 1px solid rgba(47, 108, 226, 0.1);
+}
+
+
+.per__button
+{
+  width: 90%;
+}
+.per__button a
+{
+  font-size: 18px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
 }
 
   .info_about_mob::before
@@ -3997,6 +4239,21 @@ padding: 3px;
 }
 }
 
+@media screen and (max-width: 770px)
+{
+.obj_wrapp {
+    left: 0% !important;
+}
+.reg_succ_wrapp
+{
+  width: auto;
+}
+.reg_succ_wrapp
+{
+  padding-top: 100px;
+}
+}
+
 @media screen and (max-width: 550px)
 {
       .obj_wrapp
@@ -4061,7 +4318,16 @@ padding: 3px;
 }
 @media screen and (max-width: 450px)
 {
-  .mrs::before {
+.flex-dir
+{
+  flex-direction: column;
+}
+.mob-ratings
+{
+  margin-top: 10px;
+}
+
+.mrs::before {
     position: absolute;
     right: -60%;
     top: 55px;
@@ -4070,7 +4336,20 @@ padding: 3px;
     height: 1px;
     background: url(../img/svg/bord.svg);
 }
-
+  
+.history_row-table--mobile--body--left--user img
+{
+  width: 35px;
+  height: 35px;
+}
+.history_row-table--mobile--body--right--price span
+{
+  margin-bottom: 4px;
+}
+.unit__mini a
+{
+  font-size: 11px;
+}
 .profile__orders_main
 {
   /*justify-content: space-between;*/
@@ -4082,8 +4361,23 @@ padding: 3px;
 }
 
 
+@media screen and (max-width: 434px)
+{
+  .human__item-text3 h4
+  {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 350px)
 { 
+  .info_about_mob::after
+  {
+        margin-top: 172px;
+  }
+  .own_img img {
+    width: 250px;
+  }
   .price__items 
   {
     display: flex;
