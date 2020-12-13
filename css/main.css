@@ -1857,7 +1857,7 @@ button {
       display: none; }
     .header__container_search {
       display: block; }
-  .offer {
+/*  .offer {
     display: none;
     background: url("../img/bg-jpg/offer-bg-2.jpg") no-repeat top center;
     background-size: cover; }
@@ -1889,7 +1889,7 @@ button {
           text-align: center; }
         .offer__part:last-child .part__wrapper p {
           text-align: center;
-          width: 80%; }
+          width: 80%; }*/
   .about {
     padding: 80px 0 120px; }
     .about__container {

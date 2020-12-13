@@ -171,6 +171,49 @@
 							</div>
 						</div>
 
+						<div class="wrapp_slid">
+							<div class="splide splide2">
+								<div class="splide__track">
+									<ul class="splide__list">
+
+									    	<div class="splide__slide">
+												<div class="details1__img_item">
+													<img src="img/svg/gameimg.svg" alt="gmae img">
+												</div>
+											</div>
+
+									    	<div class="splide__slide">
+												<div class="details1__img_item">
+													<img src="img/svg/gameimg2.svg" alt="gmae img">
+												</div>
+											</div>
+											<div class="splide__slide">
+												<div class="details1__img_item">
+													<img src="img/svg/gameimg.svg" alt="gmae img">
+												</div>
+											</div>
+											<div class="splide__slide">
+												<div class="details1__img_item">
+													<img src="img/svg/gameimg.svg" alt="gmae img">
+												</div>
+											</div>
+
+									    	<div class="splide__slide">
+												<div class="details1__img_item">
+													<img src="img/svg/gameimg2.svg" alt="gmae img">
+												</div>
+											</div>
+											<div class="splide__slide">
+												<div class="details1__img_item">
+													<img src="img/svg/gameimg.svg" alt="gmae img">
+												</div>
+											</div>
+									
+									</ul>
+								</div>
+							</div>
+						</div>
+
 						<div class="info_about_mob">
 							<div class="details1__data dd1">
 								<div class="details1__namegame">
@@ -270,12 +313,21 @@
 							<!-- /.row-notice__image -->
 							<div class="row__notice-body">
 								<div class="row-notice__data">
-									<a href="profile.html"><p class="row-notice__data-name">Петя</p></a>
+									<div class="name_with_stars">
+										<a href="profile.html"><p class="row-notice__data-name">Петя</p></a>
+										<div class="human__item my-stars2">
+											<img src="img/icons/Star1.jpg" alt="">
+											<img src="img/icons/Star1.jpg" alt="">
+											<img src="img/icons/Star1.jpg" alt="">
+											<img src="img/icons/Star1.jpg" alt="">
+											<img src="img/icons/Star1.jpg" alt="">
+										</div>
+									</div>
 									<p class="row-notice__data-visit">Был в сети сегодня в 16:26</p>
 								</div>
 								<!-- /.row-notice__data -->
 										<a class="row_a_not row_a_not1" href=""><div class="mr--none row-notice__icon row-notice__icon2"></div></a>
-								<a class="row_a_not" href=""><div class="mr--none row-notice__icon"></div></a>
+								<a class="row_a_not" href="request.html"><div class="mr--none row-notice__icon"></div></a>
 							<!-- /.row-notice__icon -->
 							</div>
 							<!-- /.row__notice-body -->
@@ -635,7 +687,10 @@ $('.mob-ratings img').click(function(){
 		}
 	});
 })
+new Splide( '.splide2', {
+	perPage: 3,
 
+} ).mount();
 
 	</script>
 </body>
