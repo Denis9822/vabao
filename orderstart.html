@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/update.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/splide.min.css">
 </head>
 <body>
@@ -532,10 +533,20 @@
 	<script src="js/comments-slider.js"></script>
 	<script src="js/scripts.js"></script>
 			<script src="js/splide.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
 
 	<script>
 		
 $( function() {
+
+		$('.details1__img_item').magnificPopup({
+			    items: {
+			      src: 'img/svg/gameimg.svg'
+			    },
+			  type: 'image'
+			  // other options
+			});
+
 
 new Splide( '.splide', {
 	perPage: 5,

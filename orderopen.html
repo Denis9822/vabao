@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/update.css">
 	<link rel="stylesheet" href="css/splide.min.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
 </head>
 <body>
 <div class="bg-layer"></div>
@@ -555,10 +556,19 @@
 	<script src="js/comments-slider.js"></script>
 	<script src="js/scripts.js"></script>
 				<script src="js/splide.min.js"></script>
+				<script src="js/jquery.magnific-popup.min.js"></script>
 
 	<script>
 		
 $( function() {
+
+			$('.details1__img_item').magnificPopup({
+			    items: {
+			      src: 'img/svg/gameimg.svg'
+			    },
+			  type: 'image'
+			  // other options
+			});
 
 new Splide( '.splide', {
 	perPage: 5,

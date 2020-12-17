@@ -253,6 +253,39 @@
 						<rect x="1.0434" width="17.7069" height="1.47558" transform="rotate(45 1.0434 0)" fill="#323232"></rect>
 						</svg>
 					</div>
+								<div class="selection__price--head_title">
+									Фильтр
+								</div>
+
+							<div class="ads__column-search">
+								<input type="text" name="ads__search" placeholder="Я ищу...">
+								<div class="serch_text">
+									<ul>
+										<li>Длинное название игры</li>
+										<li>Самое длинное название игры игры</li>
+										<li>Название игры</li>
+										<li>Обычное название игры</li>
+										<li>Длинное название игры</li>
+										<li>Самое длинное название игры игры</li>
+										<li>Название игры</li>
+										<li>Обычное название игры</li>
+									</ul>
+								</div>
+							</div>
+								<div class="find__sort">
+									<form class="form__sort" action="#">
+										<div class="sort">
+											<select name="sort">
+												<option value="default">По умолчанию</option>
+												<option value="old__top">Новинки</option>
+												<option value="new__top">От дешевого к дорогому</option>
+												<option value="old__top">От дорого к дешевому</option>
+												<option value="new__top">От платных объявлений</option>
+											</select>
+										</div>
+									</form>
+								</div>
+								<div class="wr_selection--content">
 								<div class="selection__price-title">
 									<p>Цена, <span>₽</span></p>
 								</div>
@@ -282,6 +315,8 @@
 											<p class="types__check"><input type="checkbox" name="type4"><span>Прочее</span></p>
 										</div>
 									</form>								
+								</div>
+
 								</div>
 								<!-- /.types__ads -->								
 							</div>
@@ -1733,7 +1768,19 @@
 						<!-- /.ads__column-find -->
 						<div class="right__wrapper">
 							<div class="ads__column-search">
-								<input type="search" name="ads__search" placeholder="Я ищу...">
+								<input type="text" name="ads__search" placeholder="Я ищу...">
+								<div class="serch_text">
+									<ul>
+										<li>Длинное название игры</li>
+										<li>Самое длинное название игры игры</li>
+										<li>Название игры</li>
+										<li>Обычное название игры</li>
+										<li>Длинное название игры</li>
+										<li>Самое длинное название игры игры</li>
+										<li>Название игры</li>
+										<li>Обычное название игры</li>
+									</ul>
+								</div>
 							</div>
 
 							<div class="mobile_header">
@@ -1754,6 +1801,7 @@
 
 							<!-- /.ads__column-search -->
 							<div class="selection__price dnc">
+
 								<div class="selection__price-title">
 									<p>Цена, <span>₽</span></p>
 								</div>
@@ -1934,6 +1982,18 @@ $( function() {
 		});
 
   	});
+
+	$('.ads__column-search input').keyup(function(){
+
+		$('.serch_text').show();
+		$(this).css('border-radius','3px 3px 0 0');
+	})
+
+	$('.ads__column-search input').blur(function(){
+		$(this).css('border-radius','3px2');
+		$('.serch_text').hide();
+	})
+
 
 	</script>
 </body>

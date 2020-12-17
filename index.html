@@ -93,6 +93,19 @@
 						<rect x="0.75" y="0.86972" width="14.5" height="14.5" rx="7.25" stroke="#323232" stroke-width="1.5"/>
 						</svg>
 					</button>
+
+						<div class="serch_text">
+									<ul>
+										<li>Длинное название игры</li>
+										<li>Самое длинное название игры игры</li>
+										<li>Название игры</li>
+										<li>Обычное название игры</li>
+										<li>Длинное название игры</li>
+										<li>Самое длинное название игры игры</li>
+										<li>Название игры</li>
+										<li>Обычное название игры</li>
+									</ul>
+								</div>
 				</form>
 			</div>
 		</div>
@@ -239,6 +252,7 @@
 		</div>
 	</header> <!-- Header End-->
 
+
 	<main id="main">
 
 		<!-- Offer Start -->
@@ -260,11 +274,18 @@
 				</div>
 			</div>
 		</section> <!-- Offer End-->
-
+		<div class="arr_down">
+			<div class="arrow-down">
+			    <a href="#ab_mob">
+			    	<span></span>
+			    <span></span>
+			</a>
+			</div>
+		</div>
 
 		<!-- About Start-->
-		<section class="about about_pc">
-			<div class="about__container container d-flex align-items-center">
+		<section class="about about_pc" >
+			<div class="about__container container d-flex align-items-center" id="ab_mob">
 				<div class="img__about">
 					<img src="img/svg/hand.svg" class="about__img_hand" alt="handshake">
 					<img src="img/svg/about2.svg" class="about__img_about" alt="people">
@@ -284,7 +305,7 @@
 	<!-- About End-->
 
 	<!-- About mobile Start-->
-		<section class="about about_mobile">
+		<section class="about about_mobile" id="ab_mob">
 			<div class="about__container container d-flex align-items-center">
 
 				<div class="about__content">
@@ -565,5 +586,19 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/comments-slider.js"></script>
 	<script src="js/scripts.js"></script>
+
+	<script>
+			$('.search-line__search input').keyup(function(){
+
+		$('.serch_text').show();
+		$(this).css('border-radius','3px 3px 0 0');
+	})
+
+	$('.search-line__search input').blur(function(){
+		$(this).css('border-radius','3px2');
+		$('.serch_text').hide();
+	})
+	
+	</script>
 </body>
 </html>
