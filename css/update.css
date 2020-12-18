@@ -3160,6 +3160,10 @@ bottom: -55px;
 
 @media screen and (max-width: 991px)
 {
+  .history__container
+  {
+        top: 20px;
+  }
   .alert__write2 
   {
        bottom: -91px;
