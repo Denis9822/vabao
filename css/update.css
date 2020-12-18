@@ -3160,6 +3160,9 @@ bottom: -55px;
 
 @media screen and (max-width: 991px)
 {
+  .orderopen__row-details1 {
+    padding-top: 28px;
+}
   .history__container
   {
         top: 20px;
