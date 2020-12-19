@@ -9,10 +9,7 @@
 {
   margin-bottom: 6px;
 }
-.open1 .massage-chat__row
-{
-  background-color: white;
-}
+
 
 *{scroll-behavior: smooth; } 
 
@@ -20,14 +17,43 @@
     margin: 30px;
     margin-top: 10px;
 }
+.row-notice__icon {
+    margin-right: 20px;
+}
 .header__separator
 {
   display: none;
 }
+  .mydetails1__button-wrapper
+  {
+    display: none;
+  }
 .slide-pc .splide__slide
 {
   cursor: zoom-in;
 }
+.my-massages
+{
+  overflow: hidden;
+}
+.chat__header-line .row_a_not1
+{
+  height: 40px;
+    width: 40px;
+    background: rgba(56, 120, 244, 0.1);
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+.chat__header-line .row-notice__icon::after {
+    margin: 0 auto 0;
+    padding-top: 17px;
+    margin-left: 8px;
+}
+
 .arrow-down span {
     display: block;
     width: 30px;
@@ -2296,7 +2322,6 @@ text-align: center;
 {
   position: relative;
       height: 80%;
-background: #F0F3F7;
 }
 .alert__write
 {
@@ -2777,6 +2802,11 @@ width: 97px;
 
 @media screen and (max-width: 1500px)
 {
+.my-massages .my-massages__wrapper
+{
+    width: 100%;
+}
+
   .my-massages__wrapper
 {
   margin: 0 auto;
@@ -2808,7 +2838,7 @@ width: 97px;
   }
   .profile__orders_item
   {
-    width: 333px !important;
+    width: 319px !important;
   }
   .splide__slide .column__row-price
   {
@@ -2953,7 +2983,7 @@ width: 97px;
 {
   .orderopen__row-details1 {
     padding-right: 10px;
-    padding-left: 25px;
+    padding-left: 10px;
 }
 .orderopen__row-details1 .splide__arrows
 {
@@ -3053,17 +3083,8 @@ width: 97px;
 }
 @media screen and (max-width: 992px)
 {
-  .orderopen__container 
-  {
-    margin-bottom: 100px;
-  }
-.orderopen__container .alert__write {
-bottom: -55px;
-}
-  .open1 .massage-chat__row
-  {
-    background-color: white;
-  }
+
+
   .finance_container
   {
     min-height: auto;
@@ -3104,11 +3125,7 @@ bottom: -55px;
   {
     padding-top: 50px;
   }
-  .orderopen__container
-  {
-    width: 95%;
-    top: 40px;
-  }
+
   .obj_wrapp
   {
     left: 16%;
@@ -3160,9 +3177,16 @@ bottom: -55px;
 
 @media screen and (max-width: 991px)
 {
-  .orderopen__row-details1 {
-    padding-top: 28px;
+  .row_a_not:nth-child(3){
+    margin-right: 20px;
+
 }
+
+    .orderopen__container
+  {
+    width: 95%;
+    margin-bottom: 115px;
+  }
   .history__container
   {
         top: 20px;
@@ -3180,7 +3204,7 @@ bottom: -55px;
     border-bottom: 0;
   }
   .history .history_row-table--mobile--status {
-    width: 43%;
+    width: 31.5%;
 }
   .header__logo
   {
@@ -3211,10 +3235,7 @@ bottom: -55px;
   {
     width: 33px;
   }
-  .orderopen__container
-  {
-    top:14px;
-  }
+
   .selection__price .ads__column-search
   {
       display: none;
@@ -3253,11 +3274,7 @@ bottom: -55px;
   }
 
 
-  .open1 .orderopen__container
-  {
-    background: inherit;
-    box-shadow: none;
-  }
+
   .open1 .history_row-table
   {
     display: none;
@@ -3275,7 +3292,8 @@ bottom: -55px;
 
   .history .history_row-table--mobile--body--right
   {
-    width:50%;
+    width:42%;
+    padding-left: 70px;
   }
   .history .finance_container_header__mob
   {
@@ -3326,17 +3344,8 @@ bottom: -55px;
  {
   width: 26%;
  }
-.chat__rules
-  {
-    margin-top: 10px;
-    width: 95%;
-        height: auto;
-    padding-bottom: 27px;
-  }
-  .row-notice__chat
-  {
-    padding-bottom: 80px;
-  }
+
+
 .buy-account::before
   {
     display: none;
@@ -3373,7 +3382,7 @@ margin-top: 20px;
   content: '';
   position: absolute;
   width: 60%;
-  right: 15%;
+  right: 9%;
   top: 35%;
 margin-top: 20px;
   text-align: center;
@@ -3489,10 +3498,7 @@ font-family: 'ProximaNove-Bld';
   {
     width: auto;
   }
-  .my-massages__chat
-  {
-    max-width: none;
-  }
+
   .left-bg1__row
   {
     display: none;
@@ -3712,10 +3718,6 @@ width: 88px;
   }
  
 
-  .orderopen__row-notice
-  {
-border: 1px solid rgba(63, 106, 190, 0.28);
-  }
   .row-notice__user
   {
     background: white;
@@ -3723,6 +3725,7 @@ border: 1px solid rgba(63, 106, 190, 0.28);
   .details1__description
   {
     margin-top: 20px;
+        width: 95%;
   }
   .details1__img_item
   {
@@ -3762,14 +3765,11 @@ border: 1px solid rgba(63, 106, 190, 0.28);
   {
     margin: 0 auto;
     margin-top: 20px;
-    display: flex;
+  
     justify-content: end;
 
   }
-  .info_about_pc
-  {
-    display: none;
-  }
+
 /*  .orderopen::before
   {
     background: none;
@@ -4090,21 +4090,13 @@ border: 1px solid rgba(63, 106, 190, 0.28);
   {
         background: rgba(56, 120, 244, 0.1);
   }
-  .my-massages__search
-  {
-    margin-top: 15px;
-  }
-  .my-massages .contacts__item
-  {
-    border-top: 0;
-  }
-  .my-massages__container
-  {
-    width: 100%;
-  }
+ 
+
+
+
   .my-massages
   {
-    padding-top: 20px;
+    padding: 40px 0 40px;
   }
   .mob__massage--title
   {
@@ -4126,11 +4118,7 @@ margin-top: 37px;
   {
     background: none;
   }
-  .my-massages__wrapper
-  {
-    box-shadow: none;
-    background: none;
-  }
+
   .top-bg
   {
     background: none;
@@ -5041,20 +5029,9 @@ color: #FFFFFF;
   display: none;
 }
 
-.orderopen__row-notice
-{
-  box-shadow: 0px 1px 21px 1px rgba(12, 50, 123, 0.07);
-  /*border-top: 0;*/
-  border-radius: 4px;
-}
 .row-notice__user
 {
   border-radius: 4px;
-}
-.orderopen__row-details1
-{
-  border-bottom: 0;
-  padding-left: 2px;
 }
 
 .orderopen .mob-last_reviews .last__row
@@ -5251,6 +5228,11 @@ margin-top: -20px;
 
 @media screen and (max-width: 800px)
 {
+
+  .my-massages__chat-active
+  {
+    border-radius: 0;
+  }
   .mrs
   {
     margin-right: 50px;
@@ -5339,12 +5321,131 @@ margin-top: -20px;
 {
   margin-left: 0;
 }
+.orderopen__container
+{
+  display: flex;
+}
+.orderopen__row-details1 h4
+{
+  font-size: 25px;
+}
+
+.reviews
+{
+  display: block;
+}
 }
 
 
 
-@media screen and (max-width: 770px)
+@media screen and (max-width: 767px)
 {
+  .profile__orders_item {
+
+    width: 361px !important;
+}
+.orderopen__container
+{
+  display: block;
+}
+
+.reviews
+{
+  display: none;
+}
+  .orderopen__container .alert__write {
+bottom: -55px;
+}
+
+  .chat__rules
+  {
+    margin-top: 10px;
+    width: 95%;
+        height: auto;
+    padding-bottom: 27px;
+  }
+
+    .row-notice__chat
+  {
+    padding-bottom: 80px;
+  }
+
+  .orderopen__row-notice
+{
+  box-shadow: 0px 1px 21px 1px rgba(12, 50, 123, 0.07);
+  /*border-top: 0;*/
+  border-radius: 4px;
+}
+
+    .orderopen__row-notice
+  {
+border: 1px solid rgba(63, 106, 190, 0.28);
+  }
+
+    .details1__description
+  {
+
+        width: auto;
+  }
+
+    .info_about_pc
+  {
+    display: none;
+  }
+
+    .info_about_mob
+  {
+
+
+    display: flex;
+  
+
+  }
+
+    .orderopen__container
+  {
+    top:14px;
+  }
+  .orderopen__container 
+  {
+    margin-bottom: 100px;
+  }
+    .open1 .orderopen__container
+  {
+    background: inherit;
+    box-shadow: none;
+  }
+    .orderopen__container
+  {
+    width: 95%;
+    top: 30px;
+  }
+
+.orderopen__row-details1
+{
+  border-bottom: 0;
+  padding-left: 2px;
+}
+
+
+    .orderopen__row-details1 {
+    padding-top: 28px;
+}
+
+.history .history_row-table--mobile--status {
+width: 32%;
+}
+
+  .history .history_row-table--mobile--body--right--data::after {
+right: 19%;
+}
+.history .history_row-table--mobile--body--right::before {
+    right: 73%;
+}
+  .history .history_row-table--mobile--body--right {
+    width: 38%;
+    padding-left: 0;
+}
     .alert__write2 
   {
        bottom: 0px;
@@ -5362,10 +5463,7 @@ margin-top: -20px;
 {
   margin-top: 60px;
 }
-.my-massages__wrapper
-{
-      height: 93vh;
-}
+
     .open1 .per__wrapper
   { 
     display: block;
@@ -5380,10 +5478,7 @@ margin-top: -20px;
         margin-top: 30px;
             padding-top: 29px;
   }
-  .mydetails1__button-wrapper
-  {
-    display: none;
-  }
+
     .info_about_mob::after
   {
 
@@ -5445,10 +5540,6 @@ margin-top: -20px;
         width: 29%;
 }
 
-.history .history_row-table--mobile--status 
-{
-  width: 34%;
-}
   .pass_ch
   {
     top: 0;
@@ -5457,10 +5548,7 @@ margin-top: -20px;
 {
   width: 90%;
 }
-.profile__orders_item  
-{
-  width: 322px !important;
-}
+
 
 .orderopen__row-details1
 {
@@ -5556,18 +5644,77 @@ margin-top: -20px;
 }
 .mob__massage--title
 {
-  margin-top: 0;
+  margin-top: 24px;
 }
 
 
 }
 
+@media screen and (max-width: 700px)
+{
+.ref_sys_wrapp
+{
+  width: auto;
+}
+
+  .img_added
+  {
+        margin-left: 11px;
+    position: absolute;
+    display: flex;
+    bottom: 102px;
+}
+.chat__header-line .row_a_not1
+{
+  display: block;
+}
+  .my-massages .chat__main {
+    height: calc(100% - 193px);
+
+}
+
+  .my-massages__wrapper
+{
+      height: 93vh;
+}
+    .my-massages
+  {
+    padding: 0;
+  }
+    .my-massages__chat
+  {
+    max-width: none;
+  }
+
+   .my-massages__search
+  {
+    margin-top: 15px;
+  }
+  .my-massages__container
+  {
+    width: 100%;
+    height: 89.5vh;
+  }
+  .my-massages__wrapper
+  {
+    box-shadow: none;
+    background: none;
+  }
+    .my-massages .contacts__item
+  {
+    border-top: 0;
+  }
+}
 
 @media screen and (max-width: 550px)
 {
+  .wrapp_usl_items .uslug_title--subtitle
+  {
+    right: inherit;
+  }
   .history .history_row-table--mobile--body--right::before
   {
-    right: 60%;
+    right: 68%;
   }
   .theme__select
   {
@@ -5776,6 +5923,20 @@ top: 10vh !important;
 }
 @media screen and (max-width: 500px)
 {
+    .orderopen__container
+  {
+  
+    top: 10px;
+  }
+  .history_row-table--mobile--body--right--data
+  {
+        padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 12px;
+  }
+  .history .history_row-table--mobile--body--right::before {
+    right: 64%;
+}
   .select_url span {
     font-size: 14px;
 }
@@ -5852,9 +6013,13 @@ top: 10vh !important;
   {
     padding-top: 5px;
   }
+  .history .history_row-table--mobile--body--right--data::after {
+        top: 40%;
+}
   .history .history_row-table--mobile--body--right--price
   {
-    padding-top: 13px;
+    padding-top: 0px;
+    padding-bottom: 10px;
   }
   .splide
   {
@@ -5867,6 +6032,12 @@ top: 10vh !important;
 }
 @media screen and (max-width: 450px)
 {
+  .header-message
+  {
+    width: calc(100% - 0px);
+    margin: 0;
+    overflow: hidden;
+  }
   .img_im div:before
   {
     top: 1px !important;
@@ -5894,7 +6065,7 @@ top: 10vh !important;
   }
   .my-massages__container
   {
-    width: 104%;
+   
   }
 /*  .my-massages__wrapper
   {
@@ -5912,10 +6083,13 @@ top: 10vh !important;
 }
 
   .history .history_row-table--mobile--body--right--price {
-    padding-top: 11px;
+    padding-top: 0px;
 }
 .history .history_row-table--mobile--body--right--data::after {
-      top: 32%;
+      top: 35%;
+}
+.history .history_row-table--mobile--body--right::before {
+  right: 59%;
 }
   .find__title_mobile h3 {
     margin-bottom: 14px;
@@ -6187,6 +6361,43 @@ margin-top: 138px;
 
 @media screen and (max-width: 400px)
 {
+  .wrapp_usl_items--item--img {
+    width: 35px;
+    height: 35px;
+}
+
+.wrapp_usl_items--item--img img {
+    padding-top: 6px;
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+    .row_a_not:nth-child(3){
+    margin-right: 5px;
+
+}
+.happy_send_w .uslug_title::after
+{
+  background-size: contain;
+      width: 30px;
+    height: 30px;
+}
+.happy_send_w .uslug_title::before
+{
+  background-size: contain;
+      width: 30px;
+    height: 30px;
+}
+
+.ref_sys_w .editturbo1 .wrap_turbo_items--count
+{
+margin-right: 22px;
+}
+.wrap_turbo_items--title
+{
+      font-size: 16px;
+}
   .wrapp_usl_items--item--title_wrapp
   {
     padding-top: 13px;
@@ -6225,13 +6436,13 @@ margin-top: 138px;
   }
   .happy_send_w .uslug_title::before 
   {
-        left: 14px !important;
-    top: 45px !important;
+        left: 40px !important;
+    top: 50px !important;
   }
     .happy_send_w .uslug_title::after 
   {
-    right: 14px !important;
-    top: 45px !important;
+  right: 40px !important;
+    top: 50px !important;
   }
   .email_succ .sub-txt
   {
@@ -6268,7 +6479,7 @@ margin-top: 138px;
     .orderopen .history_row-table--mobile--body--right--data {
         margin-right: 0px;
     margin-left: 0px;
-    margin-top: 13px;
+    margin-top: 0px;
 }
 .reg_succ_wrapp 
 {
@@ -6297,6 +6508,23 @@ line-height: 16px;
 }
 @media screen and (max-width: 390px)
 {
+
+.history .history_row-table--mobile--body--right--data
+{
+  padding-right: 7px;
+}
+.history .history_row-table--mobile--body--right--price {
+font-size: 13px;
+    padding-left: 2px;
+}
+.history .history_row-table--mobile--body--right {
+  width: 45%;
+}
+.history .history_row-table--mobile--body--right::before
+{
+  right: 54%;
+}
+
 .wrap_turbo_items {
 width: 90%;
 }
@@ -6411,6 +6639,30 @@ padding-top: 0;
 }
 @media screen and (max-width: 350px)
 { 
+  .my-massages .chat__contact {
+    margin-left: 10px;
+}
+.my-massages .chat__return {
+    margin-right: 6px;
+}
+.chat__header-line .row-notice__icon::after {
+
+    padding-top: 21px;
+    margin-left: 10px;
+}
+.my-massages .chat__inf {
+    margin-left: 10px;
+}
+    .orderopen .history_row-table--mobile--body--right--data {
+     padding-right: 5px;
+     padding-left: 5px;
+}
+
+  .history .history_row-table--mobile--body--right--data
+  {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
   .reg_succ_wrapp .uslug_title
   {
     font-size: 24px;
@@ -6433,13 +6685,13 @@ padding-top: 0;
   } 
   .happy_send_w .uslug_title::before
   {
-        left: 29px;
-    top: 41px;
+  left: 20px !important;
+    top: 53px !important;
   }
   .happy_send_w .uslug_title::after
   {
-        right: 29px;
-    top: 40px;
+       right: 20px !important;
+    top: 54px !important;
   }
   .human__item .my-stars {
     margin-bottom: 11px;
@@ -6685,6 +6937,13 @@ right: 6px;
 
 @media screen and (max-width: 325px)
 { 
+
+
+.history .history_row-table--mobile--body--right--data {
+    padding-right: 2px;
+    padding-left: 5px;
+}
+
   .history .history_row-table--mobile--body--right {
     padding-right: 5px;
 }
@@ -6769,9 +7028,20 @@ font-size: 13px;
 }
 
 }
-
+@media screen and (max-height: 680px)
+{
+  .my-massages__container{
+    height: 89vh;
+  }
+}
 @media screen and (max-height: 650px)
 { 
+    .my-massages__container{
+    height: 88.5vh;
+  }
+  .my-massages .chat__footer-line {
+height: 77px;
+}
 .about_mobile .about__img_about
 {
   margin-top: 10px;
@@ -6787,5 +7057,31 @@ width: 85vw;
 {
   font-size: 16px;
   width: 95%;
+}
+}
+
+@media screen and (max-height: 620px)
+{ 
+    .my-massages__container{
+    height: 88vh;
+  }
+
+}
+
+@media screen and (max-height: 590px)
+{ 
+    .my-massages__container{
+    height: 87.5vh;
+  }
+
+}
+
+@media screen and (max-height: 570px)
+{ 
+    .my-massages__container{
+    height: 87.1vh;
+  }
+.my-massages .chat__footer-line {
+    height: 71px;
 }
 }
