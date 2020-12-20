@@ -2981,6 +2981,23 @@ width: 97px;
 }
 @media screen and (max-width: 1100px)
 {
+.search-form__wrapper
+{
+  top: 10vh;
+}
+.register-form__wrapper
+{
+  top: 5vh;
+}
+.pass-remember-form__wrapper
+{
+  top: 20vh;
+}
+.logIn-form__wrapper
+{
+   top: 5vh;
+}
+
   .orderopen__row-details1 {
     padding-right: 10px;
     padding-left: 10px;
@@ -3177,10 +3194,109 @@ width: 97px;
 
 @media screen and (max-width: 991px)
 {
+
+ .payment_w .obj_wrapp
+  {
+     left: 20vw;
+  }
+
+    .payment_w .ref_sys_wrapp
+  {
+        width: 60vw;
+  }
+
+
+  .obji .obj_wrapp
+  {
+     left: 15vw;
+  }
+
+    .obji .obj_wrapp_item
+  {
+        width: 70vw;
+  }
+
+
+
   .row_a_not:nth-child(3){
     margin-right: 20px;
 
 }
+  
+  .moder_w .obj_wrapp
+  {
+     left: 20vw;
+  }
+
+    .moder_w .ref_sys_wrapp
+  {
+        width: 60vw;
+  }
+
+
+  .happy_send_w .obj_wrapp
+  {
+     left: 15vw;
+  }
+
+    .happy_send_w .ref_sys_wrapp
+  {
+        width: 70vw;
+  }
+
+
+
+  .order_send_w .ref_sys_wrapp
+  {
+        width: 60vw;
+  }
+
+  .order_send_w .obj_wrapp
+  {
+    left: 20vw;
+  }
+
+  .ref_sys_w .ref_sys_wrapp
+  {
+        width: 70vw;
+  }
+
+  .ref_sys_w .obj_wrapp 
+  {
+    left: 15vw;
+  }
+
+
+  .email_succ .pass_change_w
+  {
+        width: 50vw;
+  }
+
+  .email_succ .pass_change_w 
+  {
+    left: 25vw;
+  }
+
+
+  .email_succ .reg_succ_wrapp
+  {
+        width: 50vw;
+  }
+
+  .email_succ .obj_wrapp 
+  {
+    left: 25vw;
+  }
+
+  .reg_succ .reg_succ_wrapp
+  {
+        width: 45vw;
+  }
+
+  .reg_succ .obj_wrapp 
+  {
+    left: 28vw;
+  }
 
     .orderopen__container
   {
@@ -5340,6 +5456,87 @@ margin-top: -20px;
 
 @media screen and (max-width: 767px)
 {
+ .payment_w .obj_wrapp
+  {
+     left: 5vw !important;
+  }
+
+    .payment_w .ref_sys_wrapp
+  {
+        width: 90vw;
+  }
+
+
+  .obji .obj_wrapp
+  {
+     left: 0vw !important;
+     top: 0 !important;
+     height: 100vh;
+  }
+
+    .obji .obj_wrapp_item
+  {
+        width: 100vw !important;
+  }
+
+  .obji .search-form__wrapper
+  {
+    border-radius: 0;
+  }
+
+
+
+.uslugi .search-form__wrapper {
+    transition: 0.2s ease;
+    z-index: 20;
+    position: fixed;
+left: 0vw;
+    top: 0px;
+    padding: 0;
+    background: #fff;
+    height: 100% !important;
+    color: #323232;
+    border-radius: 0px;
+    overflow: auto;
+    -ms-overflow-style: none;
+}
+.wrapp_usl
+{
+      width: 100vw;
+    height: auto;
+}
+.moder_w .ref_sys_wrapp {
+    width: 90vw;
+}
+.moder_w .obj_wrapp {
+    left: 5vw !important;
+}
+
+.happy_send_w .ref_sys_wrapp {
+    width: 90vw;
+}
+.happy_send_w .obj_wrapp {
+    left: 5vw !important;
+}
+
+
+
+.order_send_w .ref_sys_wrapp
+{
+  width: 80vw;
+}
+
+.ref_sys_w .ref_sys_wrapp
+{
+  width: 80vw;
+}
+
+.ref_sys_w .obj_wrapp
+{
+  top: 40px !important;
+}
+
+
   .profile__orders_item {
 
     width: 361px !important;
@@ -5567,16 +5764,41 @@ right: 19%;
   display: inline-block;
      margin-right: 25px;*/
   }
-.obj_wrapp {
-    left: 0% !important;
-}
+
 .reg_succ_wrapp
 {
-  width: auto;
+  width: 80vw !important;
+  padding-top: 40px;
 }
-.reg_succ_wrapp
+.obj_wrapp
 {
-  padding-top: 100px;
+  left: 10vw !important;
+}
+
+.pass_change_w .obj_wrapp {
+    left: 10vw !important;
+    width: 80vw !important;
+}
+
+ .pass_change_w form
+  {
+    max-width: 93%;
+  }
+
+.reg_succ_wrapp .uslug_title
+{
+      padding-top: 20px;
+}
+.search-form__wrapper
+{
+  height: initial;
+  max-width: initial; 
+  width: initial;
+  left: initial;
+  top: initial;
+  padding: initial;
+  border-radius: 10px;
+
 }
 .my-massages__wrapper
 {
@@ -5590,6 +5812,8 @@ right: 19%;
 
 @media screen and (max-width: 720px)
 {
+
+
   .mob__massage--title
   {
     display: block;
@@ -5704,10 +5928,35 @@ right: 19%;
   {
     border-top: 0;
   }
+
+  .ref_sys_w .ref_sys_wrapp
+{
+  width: 100vw;
+}
+
+ .ref_sys_w .obj_wrapp
+ {
+    left: 0 !important;
+    top: 0 !important;
+        height: 100vh;
+ }
+
+ .ref_sys_w .search-form__wrapper
+ {
+  border-radius: 0;
+ }
 }
 
 @media screen and (max-width: 550px)
 {
+  .order_send_w .ref_sys_wrapp {
+    width: 100%;
+}
+
+  .reg_succ_wrapp 
+  {
+    width: 100% !important;
+  }
   .wrapp_usl_items .uslug_title--subtitle
   {
     right: inherit;
@@ -5779,12 +6028,12 @@ right: 19%;
   .happy_send_w .uslug_title::before
   {
         left: 47px;
-    top: 41px;
+    top: 44px;
   }
   .happy_send_w .uslug_title::after
   {
         right: 47px;
-    top: 40px;
+    top: 45px;
   }
   .send_user 
 {
@@ -6361,6 +6610,11 @@ margin-top: 138px;
 
 @media screen and (max-width: 400px)
 {
+  .pass_change_w .obj_wrapp {
+    left: 5vw !important;
+    width: 90vw !important;
+}
+
   .wrapp_usl_items--item--img {
     width: 35px;
     height: 35px;
@@ -6639,6 +6893,12 @@ padding-top: 0;
 }
 @media screen and (max-width: 350px)
 { 
+
+.order_send_w .uslug_title
+{
+  font-size: 24px;
+}
+
   .my-massages .chat__contact {
     margin-left: 10px;
 }
