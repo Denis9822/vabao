@@ -227,6 +227,7 @@ color: #323232;
     width: 36px;
     height: 36px;
     background: url(../img/svg/happy.svg);
+    background-size: contain;
 }
 
 .happy_send_w .uslug_title::after
@@ -239,6 +240,7 @@ color: #323232;
     width: 36px;
     height: 36px;
     background: url(../img/svg/happy.svg);
+    background-size: contain;
 }
 
 .send_user:hover
@@ -893,6 +895,15 @@ color: #323232;
 
   overflow-y: scroll;
  }
+ .ended
+ {
+      height: 70%;
+      
+ }
+  .ended .alert__write2
+  {
+border: 1px solid rgba(56, 120, 244, 0.1) !important;
+  }
  .uslug_wrapp 
  {
   left: calc(33.5% - 345px);
@@ -1288,6 +1299,29 @@ border: 1px solid #3878F4 !important;
       margin-right: 10px;
       width: 17px;
     height: 17px;
+}
+.my-massages .chat__return::after
+{
+  background: url(../img/svg/arr_mes.svg) no-repeat center center;
+  transform: rotate(0);
+  height: 23px;
+    width: 12px;
+}
+.my-massages .chat__contact
+{
+  margin-left: 0;
+}
+.my-massages .chat__return
+{
+  margin-right: 5px;
+}
+.my-massages .my-stars2
+{
+      margin-top: 4px !important;
+}
+.my-massages .chat__return
+{
+  background:initial;
 }
 .types__check
 {
@@ -2395,7 +2429,7 @@ padding-left: 40px;
 {
   width: 1px;
     background: rgba(47, 108, 226, 0.14);
-    height: 80%;
+    height: 65%;
         margin-right: 40px;
 }
 .finance_container_header--balance
@@ -2431,7 +2465,7 @@ padding-left: 40px;
 {
   width: 1px;
     background: rgba(47, 108, 226, 0.14);
-    height: 80%;
+    height: 65%;
         margin-right: 20px;
 }
 .finance_container_header--give
@@ -2927,6 +2961,13 @@ width: 97px;
 }
 @media screen and (max-width: 1200px)
 {
+
+  .finance_container_header--border {
+
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
   .edit_about
   {
     width: 425px !important;
@@ -3194,7 +3235,21 @@ width: 97px;
 
 @media screen and (max-width: 991px)
 {
-
+  .open1 .orderopen__row-details1
+  {
+    padding-left: 23px;
+  }
+  .header__menu li {
+        margin-right: 29px;
+}
+  .open1 .orderopen__container
+  {
+    top: 10px
+  }
+.open1 .orderopen__row-details1
+{
+  padding-top: 32px;
+}
  .payment_w .obj_wrapp
   {
      left: 20vw;
@@ -3384,10 +3439,7 @@ width: 97px;
     display: block;
   }
 
-  .open1::before
-  {
-    background: none;
-  }
+
 
 
 
@@ -5344,7 +5396,10 @@ margin-top: -20px;
 
 @media screen and (max-width: 800px)
 {
-
+  .open1 .orderopen__row-details1
+  {
+    padding-left: 10px;
+  }
   .my-massages__chat-active
   {
     border-radius: 0;
@@ -5450,12 +5505,38 @@ margin-top: -20px;
 {
   display: block;
 }
+
+.details1__button
+{
+  display: block;
+}
 }
 
 
 
 @media screen and (max-width: 767px)
 {
+    .open1::before
+  {
+    background: none;
+  }
+
+  .details1__button
+{
+  display: none;
+}
+  .open1 .orderopen__row-details1
+  {
+    padding-top: 12px;
+  }
+     .ads .splide__arrows
+  {
+    right: 47px;
+  }
+  .ads .super__item-right img {
+    padding-right: 97px;
+}
+
  .payment_w .obj_wrapp
   {
      left: 5vw !important;
@@ -5715,9 +5796,14 @@ right: 19%;
   {
     bottom: 1px;
   }
+
   .splide__arrows
   {
     display: none;
+  }
+   .ads .splide__arrows
+  {
+    display: block;
   }
   .orderopen__row-details1 .splide2
   {
@@ -5808,6 +5894,14 @@ right: 19%;
 {
   border-radius: 0;
 }
+.header__search-form .search-form__wrapper
+{
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  border-radius: 0;
+}
 }
 
 @media screen and (max-width: 720px)
@@ -5871,11 +5965,18 @@ right: 19%;
   margin-top: 24px;
 }
 
-
 }
 
 @media screen and (max-width: 700px)
 {
+  .register-form__wrapper
+{
+  top: 0vh;
+}
+.logIn-form__wrapper {
+    top: 0vh;
+}
+
 .ref_sys_wrapp
 {
   width: auto;
@@ -5896,10 +5997,15 @@ right: 19%;
     height: calc(100% - 193px);
 
 }
-
-  .my-massages__wrapper
+.my-massages .chat__footer-line
 {
-      height: 93vh;
+  position: absolute;
+    bottom: 32px;
+}
+  .my-massages__wrapper
+
+{
+      height: 94vh;
 }
     .my-massages
   {
@@ -5917,7 +6023,7 @@ right: 19%;
   .my-massages__container
   {
     width: 100%;
-    height: 89.5vh;
+    height: 91vh;
   }
   .my-massages__wrapper
   {
@@ -5949,6 +6055,15 @@ right: 19%;
 
 @media screen and (max-width: 550px)
 {
+
+       .ads .splide__arrows
+  {
+        right: -2px;
+  }
+  .ads .super__item-right img {
+    padding-right: 49px;
+}
+
 .wrapp_img--item:nth-child(2) img
 {
   width: 83px;
@@ -6043,6 +6158,7 @@ right: 19%;
   {
         right: 47px;
     top: 45px;
+    background-size: cover;
   }
   .send_user 
 {
@@ -6287,9 +6403,27 @@ top: 10vh !important;
   {
     width: 95vw !important;
   }
+  .ads .splide__slide {
+    width: 98vw !important;
+}
+.ads .slider_mobile {
+        width: 93%;
+        margin-right: 0;  
+}
+
 }
 @media screen and (max-width: 450px)
 {
+    .my-massages .chat__footer-line
+  {
+        height: 60px;
+  }
+  .my-massages .chat__main
+  {
+        height: calc(100% - 182px);
+
+  }
+
   .header-message
   {
     width: calc(100% - 0px);
@@ -6451,17 +6585,28 @@ top: 10vh !important;
     height: 50px;
         border-top: 1px solid rgba(56, 120, 244, 0.2);
   }
+  .details1__data
+  {
+        width: 29vw;
+  }
   .dd1
   {
-    margin-right: 66px;
+    margin-right: 0;
+    padding-right: 0;
+    width: 39vw;
+        padding-left: 3vw;
+    justify-content: center;
 
   }
   .dd1::after
   
   {
-        left: 37%;
+        left: 38%;
+            margin-top: 9px;
   }
-
+.info_about_mob {
+    justify-content: space-between !important;
+}
   .orderopen__container
   {
     margin-bottom: 70px;
@@ -6619,6 +6764,7 @@ margin-top: 138px;
 
 @media screen and (max-width: 400px)
 {
+
   .pass_change_w .obj_wrapp {
     left: 5vw !important;
     width: 90vw !important;
@@ -6823,6 +6969,11 @@ top: 31%;
 }  
 @media screen and (max-width: 370px)
 { 
+  .dd1 {
+        padding-left: 0vw;
+        width: 52vw;
+        margin-left: 0;
+}
   .wrapp_usl_items--item--title
   {
     font-size: 18px;
@@ -6877,7 +7028,7 @@ padding-top: 0;
   {
     width: 95px !important;
 
-    margin-right: 5px !important; 
+    margin-right: 7px !important; 
   }
   .details1__img_item
   {
@@ -6903,7 +7054,34 @@ padding-top: 0;
 
 @media screen and (max-width: 370px)
 { 
+  .my-massages .chat__return
+  {
+    margin-right: 0;
+  }
+  .my-massages .chat__header-line .row_a_not1
+  {
+        height: 30px;
+    width: 30px;
+  }
+    .my-massages .chat__header-line .chat__complain
+  {
+        height: 30px;
+    width: 30px;
+  }
+    .my-massages .chat__complain::after
+  {
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+        padding-top: 10px;
+  }
 
+  .my-massages .row-notice__icon2::after
+  {
+    height: 10px;
+    width: 13px;
+        padding-top: 21px;
+  }
   .wrapp_img--item:nth-child(1) img
   {
         width: 82px;
@@ -6930,7 +7108,23 @@ padding-top: 0;
     margin-left: 10px;
 }
 .my-massages .chat__return {
-    margin-right: 6px;
+    margin-right: 0px;
+}
+.my-massages .chat__return::after
+{
+  margin-left: 0;
+  margin-right: 5px;
+}
+.my-massages .chat__return {
+      width: 28px;
+}
+.my-massages .my-stars2 img
+{
+    width: 11px;
+}
+.my-massages .chat__header-line .row-notice__icon::after
+{
+    margin-left: 8.5px;
 }
 .chat__header-line .row-notice__icon::after {
 
@@ -6968,6 +7162,7 @@ padding-top: 0;
   {
        right: 20px !important;
     top: 54px !important;
+    background-size: cover;
   }
   .human__item .my-stars {
     margin-bottom: 11px;
@@ -7304,8 +7499,28 @@ font-size: 13px;
 }
 
 }
+
+@media (max-width: 750px) and (max-height: 850px)
+{
+  .my-massages .chat__footer-line
+  {
+    bottom: 33px;
+    height: 55px;
+  }
+  }
+
+@media (max-width: 750px) and (max-height: 700px)
+{
+  .my-massages .chat__footer-line
+  {
+    bottom: 36px;
+    height: 55px;
+  }
+}
+
 @media screen and (max-height: 680px)
 {
+
   .my-massages__container{
     height: 89vh;
   }
@@ -7315,9 +7530,7 @@ font-size: 13px;
     .my-massages__container{
     height: 88.5vh;
   }
-  .my-massages .chat__footer-line {
-height: 77px;
-}
+
 .about_mobile .about__img_about
 {
   margin-top: 10px;
@@ -7357,7 +7570,5 @@ width: 85vw;
     .my-massages__container{
     height: 87.1vh;
   }
-.my-massages .chat__footer-line {
-    height: 71px;
-}
+
 }
