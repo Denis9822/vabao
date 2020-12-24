@@ -24,6 +24,13 @@
 {
   display: none;
 }
+.ads__text {
+margin-right: 20px;
+}
+.column__info
+{
+  align-items: center;
+}
 .pass_ch .theme__select
 {
   margin-bottom: 15px;
@@ -1323,7 +1330,7 @@ border: 1px solid #3878F4 !important;
 }
 .my-massages .chat__contact
 {
-  margin-left: 0;
+  margin-left: 26px;
 }
 .my-massages .chat__return
 {
@@ -1353,6 +1360,7 @@ border: 1px solid #3878F4 !important;
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
+    text-align: right;
 }
 .column__table
 {
@@ -1418,7 +1426,7 @@ color: rgba(50, 50, 50, 0.8);
 .column__row-price
 {
   flex: 0 1 10%;
-  margin-top: 8px;
+
 }
 .super__icon {
     margin-top: 4px;
@@ -3053,7 +3061,7 @@ width: 97px;
   .column__row-price
   {
     flex: 0 1 15%;
-    margin-top: 15px;
+   
   }
 }
 @media screen and (max-width: 1100px)
@@ -3123,7 +3131,7 @@ width: 97px;
   .column__row-price
   {
     flex: 0 1 18%;
-    margin-top: 15px;
+ 
   }
   .img__about
   {
@@ -4900,10 +4908,12 @@ color: #3878F4;
   {
     flex: none;
   }
-
+.column__row-price {
+  padding-right: 13px;
+}
   .column__table_mobile_flex .column__row-user
   {
-        flex: 0 1 80%;
+        flex: 0 1 91%;
   }
   .column__table_mobile .column__row-ads
   {
@@ -5068,6 +5078,8 @@ top: -15px;
   .column__table_mobile_flex
   {
     padding-right: 7px;
+    width: 100%;
+    align-items: center;
   }
 
 .human__item .my-stars img
@@ -6094,6 +6106,11 @@ right: 19%;
 
 @media screen and (max-width: 700px)
 {
+.my-massages .chat__contact {
+    margin-left: 2px;
+}
+
+
   .register-form__wrapper
 {
   top: 0vh;
