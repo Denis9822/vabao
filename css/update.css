@@ -43,6 +43,15 @@ margin-right: 20px;
 {
   cursor: zoom-in;
 }
+.header__additional-menu__social ul
+{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+      margin-top: 15px;
+    width: 100%;
+}
 .my-massages
 {
   overflow: hidden;
@@ -473,6 +482,10 @@ line-height: 22px;
 color: #323232;
 margin-left: 10px;
   margin-bottom: 3px;
+}
+.unit__max
+{
+  font-family: 'ProximaNove-Rg';
 }
 .wrap_turbo_items--count
 {
@@ -975,6 +988,8 @@ padding-left: 60px;
  }
  .header__additional-menu {
    padding: 35px 10px 16px 10px;
+   box-sizing: content-box;
+
  }
  .numbers__item::after
  {
@@ -6197,7 +6212,14 @@ right: 19%;
 
 @media screen and (max-width: 550px)
 {
-
+  .button_mobile
+  {
+    padding: 15px 57px !important;
+  }
+.button_mobile2
+{
+  padding: 1px 0px !important;
+}
        .ads .splide__arrows
   {
         right: -2px;
